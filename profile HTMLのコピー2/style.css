@@ -1,0 +1,164 @@
+/* ------------------------------
+    基本スタイル（無印良品風）
+------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    background: #f7f7f7;   /* 無印っぽい薄い白 */
+    color: #333;           /* 落ち着いた黒 */
+    line-height: 1.8;
+}
+
+/* ------------------------------
+    ヘッダー
+------------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+header .logo img {
+    height: 60px;
+    width: auto;
+    border-radius: 4px; /* 角を少し丸くするだけで優しい印象に */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+nav ul li:hover {
+    opacity: 0.5;
+}
+
+/* ------------------------------
+    メインビジュアル
+------------------------------ */
+
+.mainvisual {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------
+    About
+------------------------------ */
+
+section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+    border-left: 4px solid #555;
+    padding-left: 12px;
+}
+
+/* プロフィールの丸アイコン */
+.about-icon img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.name {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+    Works
+------------------------------ */
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.work-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.work-box img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ------------------------------
+    Contact
+------------------------------ */
+
+.Contact nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Contact nav ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* ------------------------------
+    フッター
+------------------------------ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
